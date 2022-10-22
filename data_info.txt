@@ -1,0 +1,143 @@
+About Dataset
+Context
+
+Although this dataset was originally contributed to the UCI Machine Learning repository nearly 30 years ago,
+ mushroom hunting (otherwise known as "shrooming") is enjoying new peaks in popularity.
+ Learn which features spell certain death and which are most palatable in this dataset of mushroom characteristics.
+ And how certain can your model be?
+
+Content
+
+This dataset includes descriptions of hypothetical samples corresponding to 23 species of gilled mushrooms in
+the Agaricus and Lepiota Family Mushroom drawn from The Audubon Society Field Guide to North American Mushrooms (1981).
+ Each species is identified as definitely edible, definitely poisonous, or of unknown edibility and not recommended.
+ This latter class was combined with the poisonous one. The Guide clearly states that there is no simple rule for
+ determining the edibility of a mushroom; no rule like "leaflets three, let it be'' for Poisonous Oak and Ivy.
+
+    Time period: Donated to UCI ML 27 April 1987
+
+Inspiration
+
+    What types of machine learning models perform best on this dataset?
+    Which features are most indicative of a poisonous mushroom?
+
+Acknowledgements
+
+This dataset was originally donated to the UCI Machine Learning repository. You can learn more about past
+research using the data here.
+
+Attribute Information:
+    (classes: edible=e, poisonous=p)
+
+    cap-shape: bell=b,conical=c,convex=x,flat=f, knobbed=k,sunken=s
+
+    cap-surface: fibrous=f,grooves=g,scaly=y,smooth=s
+
+    cap-color: brown=n,buff=b,cinnamon=c,gray=g,green=r,pink=p,purple=u,red=e,white=w,yellow=y
+
+    bruises: bruises=t,no=f
+
+    odor: almond=a,anise=l,creosote=c,fishy=y,foul=f,musty=m,none=n,pungent=p,spicy=s
+
+    gill-attachment: attached=a,descending=d,free=f,notched=n
+
+    gill-spacing: close=c,crowded=w,distant=d
+
+    gill-size: broad=b,narrow=n
+
+    gill-color: black=k,brown=n,buff=b,chocolate=h,gray=g, green=r,orange=o,pink=p,purple=u,red=e,white=w,yellow=y
+
+    stalk-shape: enlarging=e,tapering=t
+
+    stalk-root: bulbous=b,club=c,cup=u,equal=e,rhizomorphs=z,rooted=r,missing=?
+
+    stalk-surface-above-ring: fibrous=f,scaly=y,silky=k,smooth=s
+
+    stalk-surface-below-ring: fibrous=f,scaly=y,silky=k,smooth=s
+
+    stalk-color-above-ring: brown=n,buff=b,cinnamon=c,gray=g,orange=o,pink=p,red=e,white=w,yellow=y
+
+    stalk-color-below-ring: brown=n,buff=b,cinnamon=c,gray=g,orange=o,pink=p,red=e,white=w,yellow=y
+
+    veil-type: partial=p,universal=u
+
+    veil-color: brown=n,orange=o,white=w,yellow=y
+
+    ring-number: none=n,one=o,two=t
+
+    ring-type: cobwebby=c,evanescent=e,flaring=f,large=l,none=n,pendant=p,sheathing=s,zone=z
+
+    spore-print-color: black=k,brown=n,buff=b,chocolate=h,green=r,orange=o,purple=u,white=w,yellow=y
+
+    population: abundant=a,clustered=c,numerous=n,scattered=s,several=v,solitary=y
+
+    habitat: grasses=g,leaves=l,meadows=m,paths=p,urban=u,waste=w,woods=d
+
+
+class :  ['p' 'e']
+class : [1 0]
+
+cap-shape :  ['x' 'b' 's' 'f' 'k' 'c']
+cap-shape : [5 0 4 2 3 1]
+
+cap-surface :  ['s' 'y' 'f' 'g']
+cap-surface : [2 3 0 1]
+
+cap-color :  ['n' 'y' 'w' 'g' 'e' 'p' 'b' 'u' 'c' 'r']
+cap-color : [4 9 8 3 2 5 0 7 1 6]
+
+bruises :  ['t' 'f']
+bruises : [1 0]
+
+odor :  ['p' 'a' 'l' 'n' 'f' 'c' 'y' 's' 'm']
+odor : [6 0 3 5 2 1 8 7 4]
+
+gill-attachment :  ['f' 'a']
+gill-attachment : [1 0]
+
+gill-spacing :  ['c' 'w']
+gill-spacing : [0 1]
+
+gill-size :  ['n' 'b']
+gill-size : [1 0]
+
+gill-color :  ['k' 'n' 'g' 'p' 'w' 'h' 'u' 'e' 'b' 'r' 'y' 'o']
+gill-color : [ 4  5  2  7 10  3  9  1  0  8 11  6]
+
+stalk-shape :  ['e' 't']
+stalk-shape : [0 1]
+
+stalk-root :  ['e' 'c' 'b' 'r' '?']
+stalk-root : [3 2 1 4 0]
+
+stalk-surface-above-ring :  ['s' 'f' 'k' 'y']
+stalk-surface-above-ring : [2 0 1 3]
+
+stalk-surface-below-ring :  ['s' 'f' 'y' 'k']
+stalk-surface-below-ring : [2 0 3 1]
+
+stalk-color-above-ring :  ['w' 'g' 'p' 'n' 'b' 'e' 'o' 'c' 'y']
+stalk-color-above-ring : [7 3 6 4 0 2 5 1 8]
+
+stalk-color-below-ring :  ['w' 'p' 'g' 'b' 'n' 'e' 'y' 'o' 'c']
+stalk-color-below-ring : [7 6 3 0 4 2 8 5 1]
+
+veil-type :  ['p']
+
+veil-color :  ['w' 'n' 'o' 'y']
+veil-color : [2 0 1 3]
+
+ring-number :  ['o' 't' 'n']
+ring-number : [1 2 0]
+
+ring-type :  ['p' 'e' 'l' 'f' 'n']
+ring-type : [4 0 2 1 3]
+
+spore-print-color :  ['k' 'n' 'u' 'h' 'w' 'r' 'o' 'y' 'b']
+spore-print-color : [2 3 6 1 7 5 4 8 0]
+
+population :  ['s' 'n' 'a' 'v' 'y' 'c']
+population : [3 2 0 4 5 1]
+
+habitat :  ['u' 'g' 'm' 'd' 'p' 'w' 'l']
+habitat : [5 1 3 0 4 6 2]

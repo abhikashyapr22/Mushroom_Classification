@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %} Home{% endblock title %}
+{% block body %}
+
+
+<!--Form for search (Horizontal Centering)-->
+<div class="mx-auto" style="width: 500px; align:center;">
+    {% if data %}
+        <div>
+            <h4>{{data}}</h4>
+        </div>
+    {% endif %}
+</div>
+
+{% endblock body %}
