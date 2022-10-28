@@ -1,3 +1,3 @@
 # Mushroom Classification Web App
 
-<img src = "/css/images/img.png" width="70%">
+<img src = "/css/images/img_1.png" width="70%">
