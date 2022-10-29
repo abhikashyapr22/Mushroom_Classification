@@ -20,16 +20,16 @@ Link: **[Mushroom Dataset](https://www.kaggle.com/datasets/uciml/mushroom-classi
 **Step 1: Install the latest version of [Python](https://www.python.org/downloads/windows/)** <br>
 **Step 2: Clone repository in your local system using following steps**
 - Move to the desired directory or create new <br>
-- press right click and select open git bash here <br>
+- press right click and select Git Bash Here <br><br>
  <img src="/css/images/img_3.png"> <br>
 - then run the following command: git clone https://github.com/abhikashyapr22/Mushroom_Classification.git <br><br>
 
-**Step 3: Now open the folder created with your IDE (Ex. Pycharm)** <br>
-<img src="/css/images/img_5.png"> <br>
+**Step 3: Now open the folder created with your IDE (Ex. Pycharm)** <br><br>
+<img src="/css/images/img_5.png"> <br><br>
 **Step 4: Install the requirements using following commands: pip install -r requirements.txt** <br>
-**Run in terminal: python app.py** <br>
-**Step 5: open: [127.0.0.1:5000](127.0.0.1:5000) in the web brower** <br>
-<img src="/css/images/img_4.png"><br>
+**Step 5: Now run app.py** <br>
+**Step 6: open: [127.0.0.1:5000](127.0.0.1:5000) in the web brower** <br><br>
+<img src="/css/images/img_4.png"><br><br>
 **Step 6: Select the specification from drop-down and submit** <br>
 
 ## there you go...
