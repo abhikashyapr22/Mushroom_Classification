@@ -1,6 +1,6 @@
 # Mushroom Classification Web App
 
-<img src = "/css/images/img_1.png" width="70%">
+<img src = "/css/images/mush_3.jpg" width="100%">
 
 ### This project aims to classify the mushroom using Machine Learning algorithms.
 
@@ -28,7 +28,7 @@ Link: **[Mushroom Dataset](https://www.kaggle.com/datasets/uciml/mushroom-classi
 <img src="/css/images/img_5.png"> <br><br>
 **Step 4: Install the requirements using following commands: pip install -r requirements.txt** <br>
 **Step 5: Now run app.py** <br>
-**Step 6: open: [127.0.0.1:5000](127.0.0.1:5000) in the web brower** <br><br>
+**Step 6: Open: [127.0.0.1:5000](127.0.0.1:5000) in the web brower** <br><br>
 <img src="/css/images/img_4.png"><br><br>
 **Step 6: Select the specification from drop-down and submit** <br>
 
