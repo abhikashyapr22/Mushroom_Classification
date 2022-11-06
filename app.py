@@ -41,24 +41,38 @@ def predict():
 
         specifications = {'cap-shape': [cap_shape], 'cap-surface': [cap_surface], 'cap-color': [cap_color],
                           'bruises': [bruises], 'odor': [odor], 'gill-attachment': [gill_attachment],
-                          'gill-spacing': [gill_spacing], 'gill-size': [gill_size], 'veil-type': [veil_type],
-                          'gill-color': [gill_color], 'stalk-shape': [stalk_shape], 'stalk-root': [stalk_root],
+                          'gill-spacing': [gill_spacing], 'gill-size': [gill_size], 'gill-color': [gill_color],
+                          'stalk-shape': [stalk_shape], 'stalk-root': [stalk_root],
                           'stalk-surface-above-ring': [stalk_surface_above_ring],
                           'stalk-surface-below-ring': [stalk_surface_below_ring],
                           'stalk-color-above-ring': [stalk_color_above_ring],
-                          'stalk-color-below-ring': [stalk_color_below_ring], 'veil-color': [veil_color],
+                          'stalk-color-below-ring': [stalk_color_below_ring], 'veil-type': [veil_type], 'veil-color': [veil_color],
                           'ring-number': [ring_number], 'ring-type': [ring_type],
                           'spore-print-color': [spore_print_color], 'population': [population], 'habitat': [habitat]}
 
-        with open(r"oe.pickle", "rb") as input_file:
-            oe = pickle.load(input_file)
+        try:
+            with open(r"oe.pickle", "rb") as input_file:
+                oe = pickle.load(input_file)
+        except:
+            flash("Something went wrong! Please try again")
+            return redirect(url_for('home'))
 
-        with open(r"my_model.pickle", "rb") as obj:
-            my_model = pickle.load(obj)
+        try:
+            with open(r"my_model.pickle", "rb") as obj:
+                my_model = pickle.load(obj)
+        except:
+            flash("Something went wrong! Please try again")
+            return redirect(url_for('home'))
 
         sample = pd.DataFrame(specifications)   # or pd.DataFrame(specifications, index=[0])
-        sample.drop('veil-type', axis=1, inplace=True)
-        processed_sample = oe.transform(sample)
+
+        try:
+            sample.drop('veil-type', axis=1, inplace=True)
+            processed_sample = oe.transform(sample)
+        except:
+            flash("Something went wrong! Please try again")
+            return redirect(url_for('home'))
+
         result = my_model.predict(processed_sample)
         if result[0] == 1:
             response = "Mushrooms with given specifications are poisonous"
@@ -66,7 +80,7 @@ def predict():
             response = "Mushrooms with given specifications are not poisonous"
         else:
             flash("Something went wrong! Please try again")
-            redirect(url_for('home'))
+            return redirect(url_for('home'))
 
         return render_template('result.html', data=response)
     else:

@@ -5,10 +5,10 @@
 <!--Form for search (Horizontal Centering)-->
 <div class="mx-auto" style="width: 100%;">
     <p>Please select the features of mushroom and submit for Classify whether it is poisonous or edible!</p>
-  <form class="#" action="/predict" method="post" style="padding:30px;">
-      <label for="cap-shape">Cap Shape</label>
-      <select name="cap-shape">
-          <option value="none">Select</option>
+  <form action="/predict" method="post" style="padding:30px;">
+      <label for="capshape">Cap Shape</label>
+      <select name="cap-shape" required>
+          <option value="">Select</option>
           <option value="b">bell</option>
           <option value="c">conical</option>
           <option value="x">convex</option>
@@ -17,16 +17,16 @@
           <option value="s">sunken</option>
         </select>
       <label for="cap-surface">Cap Surface</label>
-      <select name="cap-surface">
-          <option value="none">Select</option>
+      <select name="cap-surface" required>
+          <option value="">Select</option>
           <option value="f">fibrous</option>
           <option value="g">grooves</option>
           <option value="y">scaly</option>
           <option value="s">smooth</option>
         </select>
       <label for="cap-color">Cap Color</label>
-      <select name="cap-color">
-          <option value="none">Select</option>
+      <select name="cap-color" required>
+          <option value="">Select</option>
           <option value="n">brown</option>
           <option value="b">buff</option>
           <option value="c">cinnamon</option>
@@ -39,14 +39,14 @@
           <option value="y">yellow</option>
         </select>
       <label for="bruises">Bruises</label>
-      <select name="bruises">
-          <option value="none">Select</option>
+      <select name="bruises" required>
+          <option value="">Select</option>
           <option value="t">bruises</option>
-          <option value="f">no</option>
+          <option value="f">no bruises</option>
         </select>
       <label for="odor">Odor</label>
-      <select name="odor">
-          <option value="none">Select</option>
+      <select name="odor" required>
+          <option value="">Select</option>
           <option value="a">almond</option>
           <option value="l">anise</option>
           <option value="c">creosote</option>
@@ -58,29 +58,29 @@
           <option value="n">none</option>
         </select>
       <label for="gill-attachment">Gill Attachment</label>
-      <select name="gill-attachment">
-          <option value="none">Select</option>
+      <select name="gill-attachment" required>
+          <option value="">Select</option>
           <option value="a">attached</option>
-          <option value="d">descending</option>
+<!--          <option value="d">descending</option>-->
           <option value="f">free</option>
-          <option value="n">notched</option>
+<!--          <option value="n">notched</option>-->
         </select>
       <label for="gill-spacing">Gill Spacing</label>
-      <select name="gill-spacing">
-          <option value="none">Select</option>
+      <select name="gill-spacing" required>
+          <option value="">Select</option>
           <option value="c">close</option>
           <option value="w">crowded</option>
-          <option value="d">distant</option>
+<!--          <option value="d">distant</option>-->
         </select>
       <label for="gill-size">Gill Size</label>
-      <select name="gill-size">
-          <option value="none">Select</option>
+      <select name="gill-size" required>
+          <option value="">Select</option>
           <option value="b">broad</option>
           <option value="n">narrow</option>
         </select><br><br>
       <label for="gill-color">Gill Color</label>
-      <select name="gill-color">
-          <option value="none">Select</option>
+      <select name="gill-color" required>
+          <option value="">Select</option>
           <option value="k">black</option>
           <option value="n">brown</option>
           <option value="b">buff</option>
@@ -95,41 +95,41 @@
           <option value="y">yellow</option>
         </select>
       <label for="stalk-shape">Stalk Shape</label>
-      <select name="stalk-shape">
-          <option value="none">Select</option>
+      <select name="stalk-shape" required>
+          <option value="">Select</option>
           <option value="e">enlarging</option>
           <option value="t">tapering</option>
         </select>
       <label for="stalk-root">Stalk Root</label>
-      <select name="stalk-root">
-          <option value="none">Select</option>
+      <select name="stalk-root" required>
+          <option value="">Select</option>
           <option value="b">bulbous</option>
           <option value="c">club</option>
-          <option value="u">cup</option>
+<!--          <option value="u">cup</option>-->
           <option value="e">equal</option>
-          <option value="z">rhizomorphs</option>
+<!--          <option value="z">rhizomorphs</option>-->
           <option value="r">rooted</option>
           <option value="?">missing</option>
         </select>
       <label for="stalk-surface-above-ring">Stalk surface above ring</label>
-      <select name="stalk-surface-above-ring">
-          <option value="none">Select</option>
+      <select name="stalk-surface-above-ring" required>
+          <option value="">Select</option>
           <option value="f">fibrous</option>
           <option value="y">scaly</option>
           <option value="k">silky</option>
           <option value="s">smooth</option>
         </select>
       <label for="stalk-surface-below-ring">Stalk surface below ring</label>
-      <select name="stalk-surface-below-ring">
-          <option value="none">Select</option>
+      <select name="stalk-surface-below-ring" required>
+          <option value="">Select</option>
           <option value="f">fibrous</option>
           <option value="y">scaly</option>
           <option value="k">silky</option>
           <option value="s">smooth</option>
         </select>
       <label for="stalk-color-above-ring">Stalk color above ring</label>
-      <select name="stalk-color-above-ring">
-          <option value="none">Select</option>
+      <select name="stalk-color-above-ring" required>
+          <option value="">Select</option>
           <option value="n">brown</option>
           <option value="b">buff</option>
           <option value="c">cinnamon</option>
@@ -141,8 +141,8 @@
           <option value="y">yellow</option>
         </select><br><br>
       <label for="stalk-color-below-ring">Stalk color below ring</label>
-      <select name="stalk-color-below-ring">
-          <option value="none">Select</option>
+      <select name="stalk-color-below-ring" required>
+          <option value="">Select</option>
           <option value="n">brown</option>
           <option value="b">buff</option>
           <option value="c">cinnamon</option>
@@ -154,41 +154,41 @@
           <option value="y">yellow</option>
         </select>
       <label for="veil-type">Veil type</label>
-      <select name="veil-type">
-          <option value="none">Select</option>
+      <select name="veil-type" required>
+          <option value="">Select</option>
           <option value="p">partial</option>
           <option value="u">universal</option>
         </select>
       <label for="veil-color">Veil color</label>
-      <select name="veil-color">
-          <option value="none">Select</option>
+      <select name="veil-color" required>
+          <option value="">Select</option>
           <option value="n">brown</option>
           <option value="o">orange</option>
           <option value="w">white</option>
           <option value="y">yellow</option>
         </select>
       <label for="ring-number">Ring number</label>
-      <select name="ring-number">
-          <option value="none">Select</option>
+      <select name="ring-number" required>
+          <option value="">Select</option>
           <option value="o">one</option>
           <option value="t">two</option>
           <option value="n">none</option>
         </select>
       <label for="ring-type">Ring type</label>
-      <select name="ring-type">
-          <option value="none">Select</option>
-          <option value="c">cobwebby</option>
+      <select name="ring-type" required>
+          <option value="">Select</option>
+<!--          <option value="c">cobwebby</option>-->
           <option value="e">evanescent</option>
           <option value="f">flaring</option>
           <option value="l">large</option>
           <option value="p">pendant</option>
-          <option value="s">sheathing</option>
-          <option value="z">zone</option>
+<!--          <option value="s">sheathing</option>-->
+<!--          <option value="z">zone</option>-->
           <option value="n">none</option>
         </select>
       <label for="spore-print-color">Spore print color</label>
-      <select name="spore-print-color">
-          <option value="none">Select</option>
+      <select name="spore-print-color" required>
+          <option value="">Select</option>
           <option value="k">black</option>
           <option value="n">brown</option>
           <option value="b">buff</option>
@@ -200,8 +200,8 @@
           <option value="y">yellow</option>
         </select>
       <label for="population">Population</label>
-      <select name="population">
-          <option value="none">Select</option>
+      <select name="population" required>
+          <option value="">Select</option>
           <option value="a">abundant</option>
           <option value="c">clustered</option>
           <option value="n">numerous</option>
@@ -210,8 +210,8 @@
           <option value="y">solitary</option>
         </select><br><br>
       <label for="habitat">Habitat</label>
-      <select name="habitat">
-          <option value="none">Select</option>
+      <select name="habitat" required>
+          <option value="">Select</option>
           <option value="g">grasses</option>
           <option value="l">leaves</option>
           <option value="m">meadows</option>
